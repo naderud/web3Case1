@@ -14,12 +14,16 @@
 */
 
 /* Window and Body Styles */
-body {
+html {
   height: 100%;
+}
+
+body {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
   min-width: 640px;
+  /*min-height: 100%;*/
   width: 95%;
 }
 
@@ -31,11 +35,11 @@ header, ul, nav, li, a {
 
 
 /* Row Styles */
-header.row {
+.row {
   clear: both;
 }
 
-header.row::after{
+.row::after{
   clear: both;
   content: "";
   display: table;
@@ -52,7 +56,7 @@ ul.row::after{
 }
 
 /* Page Header Styles */
-body > header > img {
+ header > img {
   display: block;
   width: 70%;
   float: left;
@@ -60,11 +64,8 @@ body > header > img {
 }
 
 
-
-
-
 /* Horizontal Navigation List Styles */
-body > header > nav > ul > li > {
+header > nav > ul {
   display: block;
   float: left;
   padding-left: 2%;
@@ -72,24 +73,24 @@ body > header > nav > ul > li > {
   width: 30%;
 }
 
-body > header > nav > ul > li > a {
+header > nav > ul > li > a {
   display: block;
-  line-height: 1em;
-  padding-left: 5%;
+  /*line-height: 1em;
+  padding-left: 5%;*/
   width: 100%;
 }
 
-nav.horizontal > ul > li {
+.horizontal li {
    display: block;
    width: 12.5%;
    float: left;
 }
 
-nav.horizontal a {
+/*nav.horizontal a {
   display: block;
   line-height: 1.5em;
   text-align: center;
-}
+}*/
 
 /* Topics Styles */
 
@@ -109,7 +110,7 @@ ul#topics li:last-of-type {
   margin-right: 7.75%;
 }
 
-ul#topics li > img {
+ul#topics li img {
   display: block;
   width: 50%;
   margin-left: auto;
@@ -146,7 +147,7 @@ ul#comments li img {
   margin-right: 5%;
 }
 
-ul#comments p {
+ul#comments li p {
   float: left;
   width: 70%;
 }
@@ -156,7 +157,7 @@ footer {
   clear: both;
 }
 
-footer::after {
+/*footer::after {
   clear: both;
   content: "";
   display: table;
@@ -166,4 +167,4 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
